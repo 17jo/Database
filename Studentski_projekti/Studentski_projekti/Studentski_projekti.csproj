@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99E4E65B-2C34-456A-A3A7-F56D9D7FD7B9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Studentski_projekti</RootNamespace>
+    <AssemblyName>Studentski_projekti</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=3.1.0.0, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.3.1.0\lib\net461\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.3\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.21.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.21.6.1\lib\net462\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataLayer.cs" />
+    <Compile Include="Entiteti\Autori_literature.cs" />
+    <Compile Include="Entiteti\Clanci.cs" />
+    <Compile Include="Entiteti\Izvestaj.cs" />
+    <Compile Include="Entiteti\Knjiga.cs" />
+    <Compile Include="Entiteti\Literatura.cs" />
+    <Compile Include="Entiteti\Nast_predmet.cs" />
+    <Compile Include="Entiteti\Odabir.cs" />
+    <Compile Include="Entiteti\OdabirID.cs" />
+    <Compile Include="Entiteti\Praktican.cs" />
+    <Compile Include="Entiteti\Predmet.cs" />
+    <Compile Include="Entiteti\Projekat.cs" />
+    <Compile Include="Entiteti\Radovi.cs" />
+    <Compile Include="Entiteti\Student.cs" />
+    <Compile Include="Entiteti\Teorijski.cs" />
+    <Compile Include="Entiteti\Web_strana.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajClanakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajClanakForm.Designer.cs">
+      <DependentUpon>DodajClanakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajKnjiguForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajKnjiguForm.Designer.cs">
+      <DependentUpon>DodajKnjiguForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajPredmetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajPredmetForm.Designer.cs">
+      <DependentUpon>DodajPredmetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajProjekatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajProjekatForm.Designer.cs">
+      <DependentUpon>DodajProjekatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajRadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajRadForm.Designer.cs">
+      <DependentUpon>DodajRadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajStudentForm.Designer.cs">
+      <DependentUpon>DodajStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzbrisiClanciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzbrisiClanciForm.Designer.cs">
+      <DependentUpon>IzbrisiClanciForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzbrisiKnjiguForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzbrisiKnjiguForm.Designer.cs">
+      <DependentUpon>IzbrisiKnjiguForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzbrisiRadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzbrisiRadForm.Designer.cs">
+      <DependentUpon>IzbrisiRadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniProjekatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniProjekatForm.Designer.cs">
+      <DependentUpon>IzmeniProjekatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniStudentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniStudentaForm.Designer.cs">
+      <DependentUpon>IzmeniStudentaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\LiteraturaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\LiteraturaForm.Designer.cs">
+      <DependentUpon>LiteraturaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiPredmetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiPredmetForm.Designer.cs">
+      <DependentUpon>ObrisiPredmetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiProjekatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiProjekatForm.Designer.cs">
+      <DependentUpon>ObrisiProjekatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniPredmetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniPredmetForm.Designer.cs">
+      <DependentUpon>IzmeniPredmetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiStudentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiStudentaForm.Designer.cs">
+      <DependentUpon>ObrisiStudentaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\PrikaziPredmetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PrikaziPredmetForm.Designer.cs">
+      <DependentUpon>PrikaziPredmetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapiranja\Autori_literatureMapiranje.cs" />
+    <Compile Include="Mapiranja\ClanciMapiranje.cs" />
+    <Compile Include="Mapiranja\IzvestajMapiranje.cs" />
+    <Compile Include="Mapiranja\KnjigaMapiranje.cs" />
+    <Compile Include="Mapiranja\LiteraturaMapiranje.cs" />
+    <Compile Include="Mapiranja\Nast_predmetMapiranje.cs" />
+    <Compile Include="Mapiranja\OdabirMapiranje.cs" />
+    <Compile Include="Mapiranja\PrakticanMapiranje.cs" />
+    <Compile Include="Mapiranja\PredmetMapiranje.cs" />
+    <Compile Include="Mapiranja\ProjekatMapiranje.cs" />
+    <Compile Include="Mapiranja\RadoviMapiranje.cs" />
+    <Compile Include="Mapiranja\StudentMapiranje.cs" />
+    <Compile Include="Mapiranja\TeorijskiMapiranje.cs" />
+    <Compile Include="Mapiranja\Web_stranaMapiranje.cs" />
+    <Compile Include="Forme\PredmetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\PredmetForm.Designer.cs">
+      <DependentUpon>PredmetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PocetnaStrana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetnaStrana.Designer.cs">
+      <DependentUpon>PocetnaStrana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Forme\ProjekatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ProjekatForm.Designer.cs">
+      <DependentUpon>ProjekatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forme\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajClanakForm.resx">
+      <DependentUpon>DodajClanakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajKnjiguForm.resx">
+      <DependentUpon>DodajKnjiguForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajPredmetForm.resx">
+      <DependentUpon>DodajPredmetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajProjekatForm.resx">
+      <DependentUpon>DodajProjekatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajRadForm.resx">
+      <DependentUpon>DodajRadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajStudentForm.resx">
+      <DependentUpon>DodajStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzbrisiClanciForm.resx">
+      <DependentUpon>IzbrisiClanciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzbrisiKnjiguForm.resx">
+      <DependentUpon>IzbrisiKnjiguForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzbrisiRadForm.resx">
+      <DependentUpon>IzbrisiRadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniProjekatForm.resx">
+      <DependentUpon>IzmeniProjekatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniStudentaForm.resx">
+      <DependentUpon>IzmeniStudentaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\LiteraturaForm.resx">
+      <DependentUpon>LiteraturaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiPredmetForm.resx">
+      <DependentUpon>ObrisiPredmetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiProjekatForm.resx">
+      <DependentUpon>ObrisiProjekatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiStudentaForm.resx">
+      <DependentUpon>ObrisiStudentaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PredmetForm.resx">
+      <DependentUpon>PredmetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\PrikaziPredmetForm.resx">
+      <DependentUpon>PrikaziPredmetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ProjekatForm.resx">
+      <DependentUpon>ProjekatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniPredmetForm.resx">
+      <DependentUpon>IzmeniPredmetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetnaStrana.resx">
+      <DependentUpon>PocetnaStrana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Oracle.DataAccess.Common.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Oracle.ManagedDataAccess.Client.Configuration.Section.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets'))" />
+  </Target>
+</Project>
