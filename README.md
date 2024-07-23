@@ -1,8 +1,8 @@
 ## Početna stranica aplikacije
-![Početna stranica aplikacije](Images/image1.png)
+![Početna stranica aplikacije](image1.png)
 ### Prikaz nekih od glavnih entiteta
 
-![Prijavljivanje korisnika](Images/image2.png)
+![Prijavljivanje korisnika](s/image2.png)
 
 ### Opis projekta
 
