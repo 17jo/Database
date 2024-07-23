@@ -2,7 +2,7 @@
 ![Početna stranica aplikacije](Images/Image1.png)
 ### Prikaz nekih od glavnih entiteta
 
-![Prijavljivanje korisnika](s/image2.png)
+![Prijavljivanje korisnika](Images/Image2.png)
 
 ### Opis projekta
 
