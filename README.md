@@ -1,5 +1,5 @@
 ## Početna stranica aplikacije
-![Početna stranica aplikacije](image1.png)
+![Početna stranica aplikacije](Images/Image1.png)
 ### Prikaz nekih od glavnih entiteta
 
 ![Prijavljivanje korisnika](s/image2.png)
